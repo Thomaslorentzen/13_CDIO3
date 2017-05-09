@@ -10,14 +10,12 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!-- Script -->
-<script> src="https://code.jquery.com/jquery-3.1.1.js"</script>
-<script> src="jquery-serialize-object.min.js"</script>
-<script>
-	function login(){
-		
-	}
-</script>
+<script type="text/javascript" src="script.js"></script>
+
 
 </head>
 
@@ -25,8 +23,9 @@
 <body>
 
 	<!-- Begin Page Content -->
-	<div class="form">
-		<form onsubmit=login()>
+	<!-- Login page called form -->
+	<div class="form" id="login">
+		<form>
 
 			<!-- DTU Image Container -->
 			<div class="imgcontainer">
@@ -41,10 +40,15 @@
 			</div>
 
 			<!-- Container for login btn -->
-			<div class="container" style="background-color: #f1f1f1">
-				<button type="submit">Login</button>
+			<div id="btn" class="container" style="background-color: #f1f1f1">
+					<button class="loginbtn">Login</button>
 			</div>
 
 		</form>
 	</div>
+	
+	<div id="div2"></div>
+	
+
+	
 </body>
